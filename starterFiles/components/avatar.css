@@ -1,0 +1,34 @@
+@import url('../abstracts/variables.css');
+@import url('../base/reset.css');
+@import url('../utils/util.css');
+@import url('../utils/margin.css');
+@import url('../utils/padding.css');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* avatar */
+.avatar-small {
+  width: 2rem;
+  height: 2rem;
+}
+
+.content-wrapper {
+  width: 100%;
+  height: fit-content;
+  border-bottom: 1px solid black;
+  display: flex;
+}
+
+.avatar-mid {
+  width: 3rem;
+  height: 3rem;
+}
+
+.avatar-large {
+  width: 4rem;
+  height: 4rem;
+}
+
+.avatar-x-large {
+  width: 6rem;
+  height: 6rem;
+}
