@@ -1,0 +1,38 @@
+:root {
+  --primary-color: #f1465f;
+  --secondary-color: #fefdff;
+  --complimentary-text-color-2: white;
+  --accent-color: #14bdeb;
+  --text-color: #131200;
+  --text-color-2: #5c6672;
+  --complimentary-bg-color: #0c0a3e;
+
+  --box-shadow-dark: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
+  --box-shadow-light: 0 3px 5px 1px rgba(0, 0, 0, 0.5);
+
+  /* spacing */
+  --padding-1: 0.25rem;
+  --padding-2: 0.5rem;
+  --padding-3: 0.75rem;
+  --padding-4: 1rem;
+  --padding-5: 1.25rem;
+  --padding-6: 1.5rem;
+  --padding-7: 1.75rem;
+  --padding-8: 2rem;
+  --margin-1: 0.25rem;
+  --margin-2: 0.5rem;
+  --margin-3: 0.75rem;
+  --margin-4: 1rem;
+  --margin-5: 1.25rem;
+  --margin-6: 1.5rem;
+  --margin-7: 1.75rem;
+  --margin-8: 2rem;
+  --font-1: 0.5rem;
+  --font-2: 0.75rem;
+  --font-3: 0.85rem;
+  --font-4: 1rem;
+  --font-5: 1.25rem;
+  --font-6: 1.5rem;
+  --font-7: 1.75rem;
+  --font-8: 2rem;
+}
