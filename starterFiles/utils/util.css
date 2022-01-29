@@ -89,6 +89,10 @@
   color: var(--primary-color);
 }
 
+.t-c-4 {
+  color: var(--accent-color);
+}
+
 .center-text {
   text-align: center;
 }
