@@ -54,8 +54,7 @@ btn:focus {
   );
 }
 
-.btn.btn-custom:hover,
-.btn.btn-custom:focus {
+.btn.btn-custom:hover {
   background: linear-gradient(
     to left,
     var(--accent-color),
@@ -77,4 +76,15 @@ btn:focus {
 
 .btn-link:focus {
   border: 1px solid var(--text-color);
+}
+
+.floating {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.btn.btn-custom:focus + .floating {
+  display: block;
 }
