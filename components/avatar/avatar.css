@@ -1,0 +1,33 @@
+@import url('../../starterFiles/abstracts/variables.css');
+@import url('../../starterFiles/base/reset.css');
+@import url('../../starterFiles//utils/util.css');
+@import url('../../starterFiles//utils/margin.css');
+@import url('../../starterFiles//utils/padding.css');
+
+/* avatar */
+.avatar-sm {
+  width: 2rem;
+  height: 2rem;
+}
+
+.content-wrapper {
+  width: 100%;
+  height: fit-content;
+  border-bottom: 1px solid black;
+  display: flex;
+}
+
+.avatar-md {
+  width: 3rem;
+  height: 3rem;
+}
+
+.avatar-large {
+  width: 4rem;
+  height: 4rem;
+}
+
+.avatar-xl {
+  width: 6rem;
+  height: 6rem;
+}
