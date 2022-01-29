@@ -14,7 +14,7 @@
 }
 
 .btn:hover,
-btn:focus {
+.btn:focus {
   filter: brightness(90%);
 }
 
