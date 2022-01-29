@@ -1,0 +1,28 @@
+@import url('../../starterFiles/abstracts/variables.css');
+@import url('../../starterFiles/base/reset.css');
+@import url('../../starterFiles//utils/util.css');
+@import url('../../starterFiles//utils/margin.css');
+@import url('../../starterFiles//utils/padding.css');
+
+/* alert */
+.alert {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.alert-red {
+  background: var(--primary-color);
+  color: var(--text-color);
+}
+
+.alert-success {
+  background: #2fbf71;
+  color: var(--color-3);
+}
+
+.alert-info {
+  background: var(--accent-color);
+  color: var(--text-color);
+}
