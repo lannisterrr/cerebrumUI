@@ -3,6 +3,7 @@
 @import url('../../starterFiles//utils/util.css');
 @import url('../../starterFiles//utils/margin.css');
 @import url('../../starterFiles//utils/padding.css');
+@import url('../button/button.css');
 
 /* card */
 .card-container {
@@ -72,8 +73,9 @@
 
 .text-only-vertical {
   width: 200px;
+  display: flex;
 }
 
 .text-only-horizontol {
-  width: 400pxs;
+  width: 300px;
 }
