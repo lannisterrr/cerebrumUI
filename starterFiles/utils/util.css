@@ -101,18 +101,6 @@
   text-decoration: line-through;
 }
 
-.bg-blue {
-  background: var(--blue-pallete-1);
-}
-
-.bg-green {
-  background: var(--color-2);
-}
-
-.bg-red {
-  background: var(--red-color-2);
-}
-
 .l-h-1 {
   line-height: 3px;
 }
