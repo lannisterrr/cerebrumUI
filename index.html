@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>CerebrumUI</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="grid-container">
+      <header class="navbar">
+        <div class="logo-click rotate">
+          <object
+            id="logo"
+            data="documentation/logo.svg"
+            type="image/svg+xml"
+          ></object>
+        </div>
+        <h1 class="title m-r-auto heading-2">CerebrumUI</h1>
+        <nav class="social-links">
+          <ul>
+            <li>
+              <a href="#" title="github-social-media"
+                ><i class="fab fa-github fa-2x t-c-3"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" title="twitter-social-media"
+                ><i class="fab fa-twitter fa-2x t-c-3"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" title="linkedin-social-media"
+                ><i class="fab fa-linkedin fa-2x t-c-3"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <aside class="nav-menu active box-shadow-right">
+        <ul class="nav-menu-items">
+          <li class="nav-text">
+            <a class="nav-links" href="#getting-started">Getting Started</a>
+          </li>
+          <li class="nav-text">
+            <a class="nav-links" href="#">Alert</a>
+          </li>
+          <li class="nav-text">
+            <a class="nav-links" href="#avatar">Avatar</a>
+          </li>
+          <li class="nav-text"><a class="nav-links" href="#alert">Alert</a></li>
+          <li class="nav-text"><a class="nav-links" href="#badge">Badge</a></li>
+          <li class="nav-text">
+            <a class="nav-links" href="#button">Buttons</a>
+          </li>
+          <li class="nav-text"><a class="nav-links" href="#card">Cards</a></li>
+          <li class="nav-text"><a class="nav-links" href="#image">Image</a></li>
+          <li class="nav-text"><a class="nav-links" href="#input">Input</a></li>
+        </ul>
+      </aside>
+
+      <div class="components">
+        <!-- Getting Started -->
+        <section id="getting-started">
+          <header>
+            <h1 class="heading-3 t-c-3">Cerebrum UI - A componet Library</h1>
+          </header>
+          <main>
+            <p class="f-7 l-h-4">
+              As <span class="t-c-3">Cerebrum</span> is the most important part
+              of the brain and so are your components. The
+              <span class="t-c-3">Cerebrum</span>
+              is the thinking part of the brain and with this UI we also do the
+              thinking for the user so that you can build your webapps faster.
+              <br />
+              <br />
+              To quickly get started, place the following code in the head
+              section of your HTML page.
+            </p>
+
+            <div className="code-snippet">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=81px&wc=true&wa=true&pv=36px&ph=51px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fcerebrumui.netlify.app%252Fcerebrum.css%2522%2520%252F%253E"
+                style="
+                  width: 100%;
+                  height: auto;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: scroll;
+                "
+                sandbox="allow-scripts allow-same-origin"
+                title="getting-started-code"
+                scrolling="no"
+              ></iframe>
+            </div>
+          </main>
+        </section>
+
+        <!-- avatar -->
+        <section id="avatar" class="m-v-5">
+          <h3 class="heading-3 t-c-3">Avatar Component</h3>
+          <div class="centered-row space-around-row component-border p-4">
+            <img
+              src="https://images.unsplash.com/photo-1580518324671-c2f0833a3af3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+              alt="Avatar"
+              class="avatar-sm border-round"
+            />
+
+            <img
+              src="https://images.unsplash.com/photo-1580518324671-c2f0833a3af3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+              alt="Avatar"
+              class="avatar-md border-round"
+            />
+
+            <img
+              src="https://images.unsplash.com/photo-1580518324671-c2f0833a3af3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+              alt="Avatar"
+              class="avatar-lg border-round"
+            />
+
+            <img
+              src="https://images.unsplash.com/photo-1580518324671-c2f0833a3af3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+              alt="Avatar"
+              class="avatar-x-l border-round"
+            />
+          </div>
+          <div class="code-snippet centered-row">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=803.5&ds=false&dsyoff=20px&dsblur=81px&wc=true&wa=false&pv=36px&ph=51px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522your_image-link%2522%2520alt%253D%2522Avatar-small%2522%2520class%253D%2522avatar-sm%2520border-round%2522%252F%253E%250A%253Cimg%2520src%253D%2522your_image-link%2522%2520alt%253D%2522Avatar-small%2522%2520class%253D%2522avatar-md%2520border-round%2522%252F%253E%250A%253Cimg%2520src%253D%2522your_image-link%2522%2520alt%253D%2522Avatar-small%2522%2520class%253D%2522avatar-lg%2520border-round%2522%252F%253E%250A%253Cimg%2520src%253D%2522your_image-link%2522%2520alt%253D%2522Avatar-small%2522%2520class%253D%2522avatar-x-l%2520border-round%2522%252F%253E"
+              style="
+                width: 803px;
+                height: 203px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+              scrolling="no"
+            >
+            </iframe>
+          </div>
+        </section>
+
+        <!-- alert component -->
+        <section id="alert" class="m-v-5">
+          <h3 class="heading-3 t-c-3">Alert Component</h3>
+          <div class="centered-row space-around-row component-border p-4">
+            <div
+              class="alert alert-red p-h-2 m-4 round-corner box-shadow-light"
+            >
+              <span><i class="fas fa-exclamation-circle alert-icon"></i></span>
+              <p class="p-h-2">There was an error processing your request</p>
+            </div>
+
+            <div
+              class="alert alert-success p-h-2 m-4 round-corner box-shadow-light"
+            >
+              <span><i class="fas fa-check alert-icon"></i></span>
+              <p class="p-h-2">Item added to cart : checkout now!</p>
+            </div>
+
+            <div
+              class="alert alert-info p-h-2 m-4 round-corner box-shadow-light"
+            >
+              <span><i class="fas fa-info-circle alert-icon"></i></span>
+              <p class="p-h-2">You will now recieve my newsletter.</p>
+            </div>
+          </div>
+          <div class="code-snippet centered-row">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=788.5&ds=false&dsyoff=20px&dsblur=81px&wc=true&wa=false&pv=36px&ph=51px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-red%2520p-h-2%2520m-4%2520round-corner%2520box-shadow-light%2522%253E%250A%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2520alert-icon%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%253Cp%2520class%253D%2522p-h-2%2522%253EThere%2520was%2520an%2520error%2520processing%2520your%2520request%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-success%2520p-h-2%2520m-4%2520round-corner%2520box-shadow-light%2522%253E%250A%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-check%2520alert-icon%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%253Cp%2520class%253D%2522p-h-2%2522%253EItem%2520added%2520to%2520cart%2520%253A%2520checkout%2520now%21%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-info%2520p-h-2%2520m-4%2520round-corner%2520box-shadow-light%2522%253E%250A%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-check%2520alert-icon%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%253Cp%2520class%253D%2522p-h-2%2522%253EYou%2520will%2520now%2520recieve%2520my%2520newsletter%253C%252Fp%253E%250A%253C%252Fdiv%253E"
+              style="
+                width: 789px;
+                height: 390px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+              scrolling="no"
+            >
+            </iframe>
+          </div>
+        </section>
+
+        <!-- Badge Component -->
+
+        <section id="badge" class="m-v-3">
+          <h3 class="heading-3 t-c-3">Badge Component</h3>
+          <div class="centered-row space-around-row component-border p-4">
+            <div class="badge-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1580518324671-c2f0833a3af3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+                alt="Avatar"
+                class="avatar-md border-round m-3"
+              />
+              <div class="badge-avatar badge-avatar-red border-round"></div>
+            </div>
+
+            <div class="badge-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1580518324671-c2f0833a3af3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+                alt="Avatar"
+                class="avatar-md border-round m-3"
+              />
+              <div class="badge-avatar badge-avatar-green border-round"></div>
+            </div>
+
+            <div class="badge-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1580518324671-c2f0833a3af3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+                alt="Avatar"
+                class="avatar-md border-round m-3"
+              />
+              <div class="badge-avatar badge-avatar-grey border-round"></div>
+            </div>
+
+            <div class="badge-wrapper">
+              <span class="badge-icon f-8 m-2">
+                <i class="fas fa-home"></i>
+              </span>
+              <div class="badge centered-row">3</div>
+            </div>
+
+            <div class="badge-wrapper">
+              <span class="badge-icon f-8 m-2">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+              <div class="badge centered-row">3</div>
+            </div>
+
+            <div class="badge-wrapper">
+              <span class="badge-icon f-8 m-2">
+                <i class="fas fa-bell"></i>
+              </span>
+              <div class="badge centered-row">3</div>
+            </div>
+          </div>
+          <div class="code-snippet centered-row">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=788.5&ds=false&dsyoff=20px&dsblur=81px&wc=true&wa=false&pv=36px&ph=51px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge-wrapper%2522%253E%250A%253Cimg%2520src%253D%27your_image-link%27%2520alt%253D%2522Avatar%2522%2520class%253D%2522avatar-md%2520border-round%2520m-3%2522%252F%253E%250A%253Cdiv%2520class%253D%2522badge-avatar%2520badge-avatar-red%2520border-round%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-wrapper%2522%253E%250A%253Cimg%2520src%253D%27your_image-link%27%2520alt%253D%2522Avatar%2522%2520class%253D%2522avatar-md%2520border-round%2520m-3%2522%252F%253E%250A%253Cdiv%2520class%253D%2522badge-avatar%2520badge-avatar-green%2520border-round%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-wrapper%2522%253E%250A%253Cimg%2520src%253D%27your_image-link%27%2520alt%253D%2522Avatar%2522%2520class%253D%2522avatar-md%2520border-round%2520m-3%2522%252F%253E%250A%253Cdiv%2520class%253D%2522badge-avatar%2520badge-avatar-grey%2520border-round%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-wrapper%2522%253E%250A%253Cspan%2520class%253D%2522badge-icon%2520f-8%2520m-2%2522%253E%250A%253Ci%2520class%253D%2522fas%2520fa-home%2522%253E%253C%252Fi%253E%250A%253C%252Fspan%253E%250A%253Cdiv%2520class%253D%2522badge%2520centered-row%2522%253E3%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+              style="
+                width: 789px;
+                height: auto;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+
+        <!-- buttons -->
+        <section id="button" class="m-v-5 p-v-5">
+          <h3 class="heading-3 t-c-3">Button Component</h3>
+          <div class="centered-row space-around-row component-border p-4">
+            <button class="btn btn-primary m-h-3 t-c-1">Default</button>
+            <button class="btn btn-accent m-h-3 t-c-1">Accent</button>
+            <button class="btn btn-danger m-h-3 t-c-1">Danger</button>
+            <button class="btn outline-danger m-h-3 t-c-2">Danger</button>
+            <button class="btn btn-pill f-4 btn-accent m-h-3 t-c-1">
+              Pill
+            </button>
+            <button class="btn btn-custom m-h-3 t-c-1">show</button>
+            <button class="btn btn-link m-h-3 t-c-4">Link</button>
+            <button class="btn-link m-h-3 t-c-6">
+              <i class="fas fa-shopping-cart f-8"></i>
+            </button>
+            <button class="btn-link m-h-3 t-c-6">
+              <i class="fas fa-envelope f-8"></i>
+            </button>
+          </div>
+          <div class="code-snippet centered-row">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=788.5&ds=false&dsyoff=20px&dsblur=81px&wc=true&wa=false&pv=36px&ph=51px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520m-h-3%2520t-c-1%2522%253EDefault%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-accent%2520m-h-3%2520t-c-1%2522%253EAccent%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-danger%2520m-h-3%2520t-c-1%2522%253EDanger%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520outline-danger%2520m-h-3%2520t-c-2%2522%253EDanger%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-pill%2520f-4%2520btn-accent%2520m-h-3%2520t-c-1%2522%253E%250A%2520%2520Pill%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-custom%2520m-h-3%2520t-c-1%2522%253Eshow%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-link%2520m-h-3%2520t-c-4%2522%253ELink%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn-link%2520m-h-3%2520t-c-6%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2520f-8%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn-link%2520m-h-3%2520t-c-6%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-envelope%2520f-8%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A"
+              style="
+                width: 789px;
+                height: 427px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+              scrolling="no"
+            >
+            </iframe>
+          </div>
+        </section>
+
+        <section id="card" class="m-v-3">
+          <!-- card with badge -->
+          <h3 class="heading-3 t-c-3">Card Component</h3>
+          <div class="centered-row space-around-row component-border p-4">
+            <article class="card-container m-4">
+              <figure class="card-image-container">
+                <img
+                  src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16274008/2022/1/10/3636199b-e219-428a-845d-d9e2adef1ddf1641811834077-Nike-SB-Shane-Skate-Shoes-1881641811833725-1.jpg"
+                  alt=""
+                  class="card-image"
+                />
+              </figure>
+              <main class="card-body l-h-1">
+                <h3 class="f-7">Nike</h3>
+                <p class="f-5">Adults Unisex SB Shane Skate</p>
+                <p class="l-h-3">
+                  <span class="price f-7">Rs. 4966</span>
+                  <span class="line-through">Rs. 7095</span>
+                  <span class="t-c-3 f-bold">(30% OFF)</span>
+                </p>
+              </main>
+              <div class="call-to-action">
+                <button class="btn btn-danger m-h-3 t-c-1">Buy Now</button>
+                <button class="btn outline-danger m-h-3 t-c-2">
+                  Add to cart
+                </button>
+              </div>
+              <span class="card-badge special-badge f-7 p-3 t-c-2"
+                >New Season</span
+              >
+            </article>
+
+            <!-- card with dismiss -->
+
+            <article class="card-container m-4">
+              <figure class="card-image-container">
+                <img
+                  src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16274008/2022/1/10/3636199b-e219-428a-845d-d9e2adef1ddf1641811834077-Nike-SB-Shane-Skate-Shoes-1881641811833725-1.jpg"
+                  alt=""
+                  class="card-image"
+                />
+              </figure>
+              <main class="card-body l-h-1">
+                <h3 class="f-7">Nike</h3>
+                <p class="f-5">Adults Unisex SB Shane Skate</p>
+                <p class="l-h-3">
+                  <span class="price f-7">Rs. 4966</span>
+                  <span class="line-through">Rs. 7095</span>
+                  <span class="t-c-3 f-bold">(30% OFF)</span>
+                </p>
+              </main>
+              <div class="call-to-action">
+                <button class="btn btn-danger m-h-3 t-c-1">Buy Now</button>
+                <button class="btn outline-danger m-h-3 t-c-2">
+                  Add to cart
+                </button>
+              </div>
+              <span class="card-badge card-dismiss-icon"
+                ><i class="fas f-8 p-4 fa-times"></i
+              ></span>
+            </article>
+
+            <!-- card with text-overlay -->
+            <article class="card-container m-4">
+              <div class="card-text-overlay">
+                <span class="f-8 t-c-1">Out of stock</span>
+              </div>
+              <figure class="card-image-container">
+                <img
+                  src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16274008/2022/1/10/3636199b-e219-428a-845d-d9e2adef1ddf1641811834077-Nike-SB-Shane-Skate-Shoes-1881641811833725-1.jpg"
+                  alt=""
+                  class="card-image"
+                />
+              </figure>
+              <main class="card-body l-h-1">
+                <h3 class="f-7">Nike</h3>
+                <p class="f-5">Adults Unisex SB Shane Skate</p>
+              </main>
+              <div class="call-to-action">
+                <button class="btn btn-danger m-h-3 t-c-1">Buy Now</button>
+                <button class="btn outline-danger m-h-3 t-c-2">
+                  Add to cart
+                </button>
+              </div>
+            </article>
+          </div>
+          <div class="code-snippet centered-row">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=788.5&ds=false&dsyoff=20px&dsblur=81px&wc=true&wa=false&pv=36px&ph=51px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Card%2520with%2520Badge%2520--%253E%250A%253Carticle%2520class%253D%2522card-container%2520m-4%2522%253E%250A%253Cfigure%2520class%253D%2522card-image-container%2522%253E%250A%253Cimg%2520src%253D%2522your_image-link%2522%2520alt%253D%2522%2522%2520class%253D%2522card-image%2522%252F%253E%250A%253C%252Ffigure%253E%250A%253Cmain%2520class%253D%2522card-body%2520l-h-1%2522%253E%250A%253Ch3%2520class%253D%2522f-7%2522%253ENike%253C%252Fh3%253E%250A%253Cp%2520class%253D%2522f-5%2522%253EAdults%2520Unisex%2520SB%2520Shane%2520Skate%253C%252Fp%253E%250A%253Cp%2520class%253D%2522l-h-3%2522%253E%250A%253Cspan%2520class%253D%2522price%2520f-7%2522%253ERs.%25204966%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522line-through%2522%253ERs.%25207095%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522t-c-3%2520f-bold%2522%253E%2830%2525%2520OFF%29%253C%252Fspan%253E%250A%253C%252Fp%253E%250A%253C%252Fmain%253E%250A%253Cdiv%2520class%253D%2522call-to-action%2522%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-danger%2520m-h-3%2520t-c-1%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520outline-danger%2520m-h-3%2520t-c-2%2522%253E%250AAdd%2520to%2520cart%250A%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%253Cspan%2520class%253D%2522card-badge%2520card-dismiss-icon%2522%250A%253E%253Ci%2520class%253D%2522fas%2520f-8%2520p-4%2520fa-times%2522%253E%253C%252Fi%250A%253E%253C%252Fspan%253E%250A%253C%252Farticle%253E%250A%250A%253C%21--%2520Card%2520with%2520Dismiss%2520--%253E%250A%253Carticle%2520class%253D%2522card-container%2520m-4%2522%253E%250A%253Cfigure%2520class%253D%2522card-image-container%2522%253E%250A%253Cimg%2520src%253D%2522your_image-link%2522%2520alt%253D%2522%2522%2520class%253D%2522card-image%2522%252F%253E%250A%253C%252Ffigure%253E%250A%253Cmain%2520class%253D%2522card-body%2520l-h-1%2522%253E%250A%253Ch3%2520class%253D%2522f-7%2522%253ENike%253C%252Fh3%253E%250A%253Cp%2520class%253D%2522f-5%2522%253EAdults%2520Unisex%2520SB%2520Shane%2520Skate%253C%252Fp%253E%250A%253Cp%2520class%253D%2522l-h-3%2522%253E%250A%253Cspan%2520class%253D%2522price%2520f-7%2522%253ERs.%25204966%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522line-through%2522%253ERs.%25207095%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522t-c-3%2520f-bold%2522%253E%2830%2525%2520OFF%29%253C%252Fspan%253E%250A%253C%252Fp%253E%250A%253C%252Fmain%253E%250A%253Cdiv%2520class%253D%2522call-to-action%2522%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-danger%2520m-h-3%2520t-c-1%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520outline-danger%2520m-h-3%2520t-c-2%2522%253E%250AAdd%2520to%2520cart%250A%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%253Cspan%2520class%253D%2522card-badge%2520card-dismiss-icon%2522%250A%253E%253Ci%2520class%253D%2522fas%2520f-8%2520p-4%2520fa-times%2522%253E%253C%252Fi%250A%253E%253C%252Fspan%253E%250A%253C%252Farticle%253E%250A%250A%253C%21--%2520Card%2520with%2520Overlay%2520--%253E%250A%253Carticle%2520class%253D%2522card-container%2520m-4%2522%253E%250A%253Cdiv%2520class%253D%2522card-text-overlay%2522%253E%250A%253Cspan%2520class%253D%2522f-8%2520t-c-1%2522%253EOut%2520of%2520stock%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cfigure%2520class%253D%2522card-image-container%2522%253E%250A%253Cimg%2520src%253D%2522Your_image-link%2522%2520alt%253D%2522%2522%2520class%253D%2522card-image%2522%252F%253E%250A%253C%252Ffigure%253E%250A%253Cmain%2520class%253D%2522card-body%2520l-h-1%2522%253E%250A%253Ch3%2520class%253D%2522f-7%2522%253ENike%253C%252Fh3%253E%250A%253Cp%2520class%253D%2522f-5%2522%253EAdults%2520Unisex%2520SB%2520Shane%2520Skate%253C%252Fp%253E%250A%253C%252Fmain%253E%250A%253Cdiv%2520class%253D%2522call-to-action%2522%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-danger%2520m-h-3%2520t-c-1%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520outline-danger%2520m-h-3%2520t-c-2%2522%253E%250AAdd%2520to%2520cart%250A%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%253C%252Farticle%253E"
+              style="
+                width: 789px;
+                height: 427px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <div class="centered-row space-around-row component-border p-4 m-v-5">
+            <h3 class="heading-3 t-c-3">Text Only Cards</h3>
+            <!-- text only vertical cards -->
+            <article
+              class="card-container box-shadow-light text-only-vertical m-4"
+            >
+              <main class="card-body p-v-4 p-h-2 centered-column">
+                <h3 class="f-7">This is a text only vertical card</h3>
+                <p class="f-5">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Deleniti soluta laboriosam rem dolore earum debitis vero
+                  sapiente eaque consequuntur facere!
+                </p>
+              </main>
+            </article>
+
+            <!-- text only horizontol cards -->
+
+            <article
+              class="card-container text-only-horizontol m-4 box-shadow-light"
+            >
+              <main class="card-body p-3">
+                <h3 class="f-7">This is a text only horizontol card</h3>
+                <p class="f-5">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Deleniti soluta laboriosam rem dolore earum debitis vero
+                  sapiente eaque consequuntur facere!
+                </p>
+              </main>
+            </article>
+          </div>
+          <div class="code-snippet centered-row">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=788.5&ds=false&dsyoff=20px&dsblur=81px&wc=true&wa=false&pv=36px&ph=51px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520text%2520only%2520vertical%2520cards%2520--%253E%250A%253Carticle%2520class%253D%2522card-container%2520box-shadow-light%2520text-only-vertical%2520m-4%2522%253E%250A%253Cmain%2520class%253D%2522card-body%2520p-v-4%2520p-h-2%2520centered-column%2522%253E%250A%253Ch3%2520class%253D%2522f-7%2522%253EThis%2520is%2520a%2520text%2520only%2520vertical%2520card%253C%252Fh3%253E%250A%253Cp%2520class%253D%2522f-5%2522%253E%250ALorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%252C%2520adipisicing%2520elit.%250ADeleniti%2520soluta%2520laboriosam%2520rem%2520dolore%2520earum%2520debitis%2520vero%250Asapiente%2520eaque%2520consequuntur%2520facere%21%250A%253C%252Fp%253E%250A%253C%252Fmain%253E%250A%253C%252Farticle%253E%250A%250A%253C%21--%2520text%2520only%2520horizontol%2520cards%2520--%253E%250A%250A%253Carticle%2520class%253D%2522card-container%2520text-only-horizontol%2520m-4%2520box-shadow-light%2522%253E%250A%253Cmain%2520class%253D%2522card-body%2520p-3%2522%253E%250A%253Ch3%2520class%253D%2522f-7%2522%253EThis%2520is%2520a%2520text%2520only%2520horizontol%2520card%253C%252Fh3%253E%250A%253Cp%2520class%253D%2522f-5%2522%253E%250ALorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%252C%2520adipisicing%2520elit.%250ADeleniti%2520soluta%2520laboriosam%2520rem%2520dolore%2520earum%2520debitis%2520vero%250Asapiente%2520eaque%2520consequuntur%2520facere%21%250A%253C%252Fp%253E%250A%253C%252Fmain%253E%250A%253C%252Farticle%253E%250A"
+              style="
+                width: 789px;
+                height: 594px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+
+        <!-- responsive image -->
+
+        <section id="image" class="m-v-3">
+          <h3 class="heading-3 t-c-3">Responsive Images</h3>
+          <div class="centered-row space-around-row component-border p-4">
+            <div class="image-container">
+              <img
+                src="https://picsum.photos/seed/picsum/300/200"
+                alt="responsive-image"
+                class="responsive-image"
+              />
+            </div>
+
+            <!-- round corner -->
+            <div class="image-container">
+              <img
+                src="https://picsum.photos/seed/picsum/300/200"
+                alt="responsive-image"
+                class="responsive-image round-corner"
+              />
+            </div>
+          </div>
+          <div class="code-snippet centered-row">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=788.5&ds=false&dsyoff=20px&dsblur=81px&wc=true&wa=false&pv=36px&ph=51px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522image-container%2522%253E%250A%253Cimg%250Asrc%253D%2522https%253A%252F%252Fpicsum.photos%252Fseed%252Fpicsum%252F300%252F200%2522%250Aalt%253D%2522responsive-image%2522%250Aclass%253D%2522responsive-image%2522%250A%252F%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520round%2520corner%2520--%253E%250A%253Cdiv%2520class%253D%2522image-container%2522%253E%250A%253Cimg%250Asrc%253D%2522https%253A%252F%252Fpicsum.photos%252Fseed%252Fpicsum%252F300%252F200%2522%250Aalt%253D%2522responsive-image%2522%250Aclass%253D%2522responsive-image%2520round-corner%2522%250A%252F%253E%250A%253C%252Fdiv%253E"
+              style="
+                width: 789px;
+                height: 427px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+              scrolling="no"
+            >
+            </iframe>
+          </div>
+        </section>
+
+        <!-- input component -->
+        <section id="input" class="m-v-4">
+          <h3 class="heading-3 t-c-3">Input Component</h3>
+          <div class="centered-row space-around-row component-border p-4">
+            <div class="textbox">
+              <textarea
+                name="textbox"
+                class="textbox round-corner p-3 f-5"
+              ></textarea>
+            </div>
+            <div class="input-container">
+              <input type="email" required class="error" />
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

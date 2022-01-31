@@ -4,6 +4,11 @@
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -12,7 +17,6 @@ html {
 p {
   font-size: 1rem;
 }
-
 /* img,
 video,
 iframe {
