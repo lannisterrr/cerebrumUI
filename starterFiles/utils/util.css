@@ -89,24 +89,16 @@
   color: var(--primary-color);
 }
 
+.t-c-4 {
+  color: var(--accent-color);
+}
+
 .center-text {
   text-align: center;
 }
 
 .line-through {
   text-decoration: line-through;
-}
-
-.bg-blue {
-  background: var(--blue-pallete-1);
-}
-
-.bg-green {
-  background: var(--color-2);
-}
-
-.bg-red {
-  background: var(--red-color-2);
 }
 
 .l-h-1 {

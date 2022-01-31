@@ -1,0 +1,81 @@
+@import url('../../starterFiles/abstracts/variables.css');
+@import url('../../starterFiles/base/reset.css');
+@import url('../../starterFiles//utils/util.css');
+@import url('../../starterFiles//utils/margin.css');
+@import url('../../starterFiles//utils/padding.css');
+@import url('../button/button.css');
+
+/* card */
+.card-container {
+  position: relative;
+  width: 300px;
+  height: fit-content;
+  border-radius: 7px;
+  background: var(--secondary-color);
+}
+
+.card-container:hover {
+  cursor: pointer;
+}
+
+.card-image-container {
+  margin: 0;
+}
+
+.card-image {
+  width: 100%;
+  height: fit-content;
+  display: block;
+}
+
+.card-body {
+  padding-bottom: 1rem;
+  margin-left: 4rem;
+}
+
+.special-badge {
+  clip-path: polygon(11% 0%, 100% 0%, 100% 100%, 17% 100%, 0% 49%);
+}
+
+.card-badge {
+  background: var(--primary-color);
+  position: absolute;
+  top: 5px;
+  right: 0;
+  filter: brightness(130%);
+  text-align: center;
+  font-weight: 400;
+}
+
+.card-text-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  opacity: 1;
+}
+
+.call-to-action {
+  display: flex;
+  padding-bottom: 1rem;
+  justify-content: flex-end;
+}
+
+.shoppingCard-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 2px solid var(--text-color);
+}
+
+.text-only-vertical {
+  width: 200px;
+  display: flex;
+}
+
+.text-only-horizontol {
+  width: 300px;
+}

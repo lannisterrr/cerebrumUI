@@ -1,0 +1,90 @@
+@import url('../../starterFiles/abstracts/variables.css');
+@import url('../../starterFiles/base/reset.css');
+@import url('../../starterFiles//utils/util.css');
+@import url('../../starterFiles//utils/margin.css');
+@import url('../../starterFiles//utils/padding.css');
+
+/* buttons */
+
+.btn {
+  border: 1px solid var(--secondary-color);
+  outline: none;
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+}
+
+.btn:hover,
+.btn:focus {
+  filter: brightness(90%);
+}
+
+.btn.btn-primary {
+  background: var(--complimentary-bg-color);
+  color: var(--secondary-color);
+}
+
+.btn.btn-accent {
+  background: var(--accent-color);
+}
+
+.btn.btn-danger {
+  background: var(--primary-color);
+}
+
+.btn.outline-danger {
+  border: 1px solid var(--primary-color);
+  background: transparent;
+}
+
+.btn.outline-danger:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.btn-pill {
+  border-radius: 1000000px;
+}
+
+.btn.btn-custom {
+  /* apply this color from right to left */
+  background: linear-gradient(
+    to left,
+    var(--accent-color),
+    var(--primary-color)
+  );
+}
+
+.btn.btn-custom:hover {
+  background: linear-gradient(
+    to left,
+    var(--accent-color),
+    var(--primary-color)
+  );
+}
+
+.btn-link {
+  background: transparent;
+  border: none;
+  font-weight: bold;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.btn-link:focus {
+  border: 1px solid var(--text-color);
+}
+
+.floating {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.btn.btn-custom:focus + .floating {
+  display: block;
+}
