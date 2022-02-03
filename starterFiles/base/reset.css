@@ -17,15 +17,11 @@ html {
 p {
   font-size: 1rem;
 }
-/* img,
-video,
-iframe {
-  max-inline-size: 100%;
-  block-size: auto;
 
-  aspect-ratio: 2/1;
+ul {
+  list-style: none;
+}
 
-  object-fit: contain;
-
-  object-position: center;
-} */
+a {
+  text-decoration: none;
+}
