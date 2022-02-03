@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="input.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Input</title>
+  </head>
+  <body>
+    <div class="centered-column space-around-row component-border p-4">
+      <div class="textbox">
+        <textarea
+          name="textbox"
+          class="text-box round-corner p-5 f-5"
+          rows="5"
+          cols="33"
+          placeholder="What's on your mind?"
+        ></textarea>
+      </div>
+      <div class="input-container m-v-3">
+        <label class="f-6 t-c-3 m-v-3" for="email">Email:</label> <br />
+        <input
+          type="email"
+          required
+          class="error p-2 round-corner email-input"
+          id="email"
+        />
+        <p class="f-5 t-c-3 warning">Please type correct email!</p>
+      </div>
+      <div class="custom-radio-container">
+        <label class="radio m-v-4 f-6" for="item-1">
+          <input type="radio" name="item" id="item-1" class="radio__input" />
+          <div class="radio__radio border-round p-1">
+            <!-- Virtual Element inside this div -->
+          </div>
+          Male
+        </label>
+
+        <label class="radio m-v-4 p-h-4 f-6" for="item-2">
+          <input type="radio" name="item" id="item-2" class="radio__input" />
+          <div class="radio__radio border-round p-1">
+            <!-- Virtual Element inside this div -->
+          </div>
+          Female
+        </label>
+      </div>
+
+      <div class="custom-checkbox-container m-v-4">
+        <label for="myCheckboxId" class="checkbox f-6">
+          <input
+            checked
+            class="checkbox__input"
+            type="checkbox"
+            name="myCheckboxName"
+            id="myCheckboxId"
+          />
+          <div class="checkbox__box"></div>
+          Yes , send me email notifications.
+        </label>
+      </div>
+
+      <input
+        type="range"
+        class="custom-range m-v-6"
+        id="volume"
+        name="volume"
+      />
+    </div>
+  </body>
+</html>
