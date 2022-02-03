@@ -1,0 +1,135 @@
+.align-center {
+  text-align: center;
+}
+
+.navbar {
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+  background: var(--secondary-color);
+  width: 95%;
+  margin: auto;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-click {
+  pointer-events: none;
+  cursor: pointer;
+  margin-left: -6rem;
+}
+
+#logo {
+  width: 150px;
+  padding-top: 2rem;
+  pointer-events: none;
+}
+
+.social-links > ul {
+  display: flex;
+  gap: 2rem;
+  margin-left: auto;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 5rem;
+  left: -100%;
+  transition: 850ms;
+}
+
+.nav-menu.active {
+  left: 0;
+  overflow: auto;
+  transition: 350ms;
+}
+
+.nav-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0px 8px 1.6rem;
+  list-style: none;
+  cursor: pointer;
+}
+
+.nav-text .nav-links {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  width: 90%;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+}
+
+.nav-links:focus {
+  border-bottom: 3px solid var(--complimentary-bg-color);
+}
+
+.nav-menu-items {
+  width: 100%;
+}
+
+.title {
+  padding: 0rem 1rem;
+  color: var(--primary-color);
+  margin-left: -5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  /* max width */
+
+  .navbar {
+    width: 100%;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 8rem;
+    left: -100%;
+    transition: 850ms;
+  }
+
+  .nav-menu.active {
+    left: 0;
+    background: var(--border-color);
+    overflow: auto;
+    transition: 350ms;
+    height: 100vh;
+    z-index: 999;
+  }
+
+  .logo-click {
+    pointer-events: auto;
+    margin-left: -4rem;
+  }
+
+  .title {
+    display: none;
+  }
+
+  iframe {
+    width: 500px;
+  }
+}
+
+.rotate {
+  -moz-transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+.rotate.down {
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+@media screen and (min-width: 1400px) {
+  /* big screen */
+}

@@ -1,0 +1,268 @@
+@import url('./starterFiles/abstracts/variables.css');
+@import url('./starterFiles/base/reset.css');
+@import url('./starterFiles/utils/util.css');
+@import url('./starterFiles/utils/margin.css');
+@import url('./starterFiles/utils/padding.css');
+@import url('./starterFiles/utils/typography.css');
+@import url('./documentation/navbar.css');
+@import url('./documentation/documention.css');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+  /* background: rgb(236, 224, 224); */
+}
+
+/* avatar */
+.avatar-sm {
+  width: 3rem;
+  height: 3rem;
+}
+
+.avatar-md {
+  width: 6rem;
+  height: 6rem;
+}
+
+.avatar-lg {
+  width: 8rem;
+  height: 8rem;
+}
+
+.avatar-x-l {
+  width: 10rem;
+  height: 10rem;
+}
+
+/* alert component */
+.alert {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.alert-red {
+  background: var(--primary-color);
+  color: var(--text-color);
+}
+
+.alert-success {
+  background: #2fbf71;
+  color: var(--color-3);
+}
+
+.alert-info {
+  background: var(--accent-color);
+  color: var(--text-color);
+}
+
+/* badge component */
+
+/* badge avatar */
+.badge-wrapper {
+  position: relative;
+}
+
+.badge-avatar-red {
+  background: var(--primary-color);
+}
+
+.badge-avatar-green {
+  background: green;
+}
+
+.badge-avatar-grey {
+  background: grey;
+}
+
+.badge-avatar {
+  position: absolute;
+  bottom: 1rem;
+  right: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.145rem solid var(--secondary-color);
+}
+
+/* badge-icon */
+
+.badge {
+  background: var(--primary-color);
+  border-radius: 50%;
+  color: white;
+  width: 1.2rem;
+  position: absolute;
+  top: -1px;
+  right: -2px;
+}
+
+/* buttons */
+
+.btn {
+  border: 1px solid var(--secondary-color);
+  outline: none;
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+}
+
+.btn:hover,
+btn:focus {
+  filter: brightness(90%);
+}
+
+.btn.btn-primary {
+  background: var(--complimentary-bg-color);
+  color: var(--secondary-color);
+}
+
+.btn.btn-accent {
+  background: var(--accent-color);
+}
+
+.btn.btn-danger {
+  background: var(--primary-color);
+}
+
+.btn.outline-danger {
+  border: 1px solid var(--primary-color);
+  background: transparent;
+}
+
+.btn.outline-danger:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.btn-pill {
+  border-radius: 1000000px;
+}
+
+.btn.btn-custom {
+  /* apply this color from right to left */
+  background: linear-gradient(
+    to left,
+    var(--accent-color),
+    var(--primary-color)
+  );
+}
+
+.btn.btn-custom:hover,
+.btn.btn-custom:focus {
+  background: linear-gradient(
+    to left,
+    var(--accent-color),
+    var(--primary-color)
+  );
+}
+
+.btn-link {
+  background: transparent;
+  border: none;
+  font-weight: bold;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.btn-link:focus {
+  border: 1px solid var(--text-color);
+}
+
+/* card */
+.card-container {
+  position: relative;
+  width: 300px;
+  height: fit-content;
+  border-radius: 7px;
+  background: var(--secondary-color);
+}
+
+.card-container:hover {
+  cursor: pointer;
+}
+
+.card-image-container {
+  margin: 0;
+}
+
+.card-image {
+  width: 100%;
+  height: fit-content;
+  display: block;
+}
+
+.card-body {
+  padding-bottom: 1rem;
+  margin-left: 4rem;
+}
+
+.special-badge {
+  clip-path: polygon(11% 0%, 100% 0%, 100% 100%, 17% 100%, 0% 49%);
+}
+
+.card-badge {
+  background: var(--primary-color);
+  position: absolute;
+  top: 5px;
+  right: 0;
+  filter: brightness(130%);
+  text-align: center;
+  font-weight: 400;
+}
+
+.card-text-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  opacity: 1;
+}
+
+.call-to-action {
+  display: flex;
+  padding-bottom: 1rem;
+  justify-content: flex-end;
+}
+
+.shoppingCard-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-only-vertical {
+  width: 200px;
+  display: flex;
+}
+
+.text-only-horizontol {
+  width: 300px;
+}
+
+.border-bottom {
+  border-bottom: 2px solid var(--text-color);
+}
+
+/* text box */
+.textbox {
+  resize: none;
+  width: 25rem;
+  height: fit-content;
+  border-color: var(--text-color-2);
+}
+
+.error {
+  outline: none;
+}
+
+.error:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
