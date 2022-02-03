@@ -486,15 +486,106 @@
         <section id="input" class="m-v-4">
           <h3 class="heading-3 t-c-3">Input Component</h3>
           <div class="centered-row space-around-row component-border p-4">
-            <div class="textbox">
+            <h3 class="heading-3 t-c-3">Textbox</h3>
+            <div class="textbox-container">
               <textarea
                 name="textbox"
-                class="textbox round-corner p-3 f-5"
+                class="text-box round-corner p-5 f-5"
+                rows="5"
+                cols="33"
+                placeholder="What's on your mind?"
               ></textarea>
             </div>
-            <div class="input-container">
-              <input type="email" required class="error" />
+            <h3 class="heading-3 t-c-3">Text Input</h3>
+            <div class="input-container m-v-3">
+              <label class="f-6 t-c-3 m-v-3" for="email">Email:</label> <br />
+              <input
+                type="email"
+                required
+                class="error p-2 round-corner email-input"
+                id="email"
+              />
+              <p class="f-5 t-c-3 warning">Please type correct email!</p>
             </div>
+            <h3 class="heading-3 t-c-3">Radio Buttons</h3>
+            <div class="custom-radio-container">
+              <label class="radio m-v-4 f-6" for="item-1">
+                <input
+                  type="radio"
+                  name="item"
+                  id="item-1"
+                  class="radio__input"
+                />
+                <div class="radio__radio border-round p-1">
+                  <!-- Virtual Element inside this div -->
+                </div>
+                Male
+              </label>
+
+              <label class="radio m-v-4 p-h-4 f-6" for="item-2">
+                <input
+                  type="radio"
+                  name="item"
+                  id="item-2"
+                  class="radio__input"
+                />
+                <div class="radio__radio border-round p-1">
+                  <!-- Virtual Element inside this div -->
+                </div>
+                Female
+              </label>
+            </div>
+          </div>
+          <div class="code-snippet centered-row">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=911.25&ds=false&dsyoff=20px&dsblur=81px&wc=true&wa=false&pv=36px&ph=51px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Text%2520Box%2520--%253E%250A%253Ctextarea%2520name%253D%2522textbox%2522%2520class%253D%2522text-box%2520round-corner%2520p-5%2520f-5%2522%2520rows%253D%25225%2522%2520cols%253D%252233%2522%2520placeholder%253D%2522What%27s%2520on%2520your%2520mind%253F%2522%253E%253C%252Ftextarea%253E%250A%250A%253C%21--%2520Input%2520Text%2520--%253E%250A%253Clabel%2520class%253D%2522f-6%2520t-c-3%2520m-v-3%2522%2520for%253D%2522email%2522%253EEmail%253A%253C%252Flabel%253E%2520%253Cbr%2520%252F%253E%250A%253Cinput%2520type%253D%2522email%2522%2520required%2520class%253D%2522error%2520p-2%2520round-corner%2520email-input%2522%2520id%253D%2522email%2522%252F%253E%250A%253Cp%2520class%253D%2522f-5%2520t-c-3%2520warning%2522%253EPlease%2520type%2520correct%2520email%21%253C%252Fp%253E%250A%250A%253C%21--%2520Radio%2520Buttons%2520--%253E%250A%253Clabel%2520class%253D%2522radio%2520m-v-4%2520f-6%2522%2520for%253D%2522item-1%2522%253E%250A%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522item%2522%2520id%253D%2522item-1%2522%2520class%253D%2522radio__input%2522%252F%253E%250A%253Cdiv%2520class%253D%2522radio__radio%2520border-round%2520p-1%2522%253E%253C%252Fdiv%253E%250A%2520Male%250A%253C%252Flabel%253E"
+              style="
+                width: 911px;
+                height: 425px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <div class="centered-row space-around-row component-border p-4 m-v-4">
+            <h3 class="heading-3 t-c-3">CheckBox</h3>
+            <div class="custom-checkbox-container m-v-4">
+              <label for="myCheckboxId" class="checkbox f-6">
+                <input
+                  checked
+                  class="checkbox__input"
+                  type="checkbox"
+                  name="myCheckboxName"
+                  id="myCheckboxId"
+                />
+                <div class="checkbox__box"></div>
+                Yes , send me email notifications.
+              </label>
+            </div>
+            <h3 class="heading-3 t-c-3">Range Slider</h3>
+            <input
+              type="range"
+              class="custom-range m-v-6"
+              id="volume"
+              name="volume"
+            />
+          </div>
+          <div class="code-snippet centered-row">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=809.75&ds=false&dsyoff=20px&dsblur=81px&wc=true&wa=false&pv=36px&ph=51px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520checkbox%2520--%253E%250A%253Clabel%2520for%253D%2522myCheckboxId%2522%2520class%253D%2522checkbox%2520f-6%2522%253E%250A%253Cinput%2520checked%2520class%253D%2522checkbox__input%2522%2520type%253D%2522checkbox%2522%2520name%253D%2522myCheckboxName%2522%2520id%253D%2522myCheckboxId%2522%252F%253E%250A%253Cdiv%2520class%253D%2522checkbox__box%2522%253E%253C%252Fdiv%253E%250AYes%2520%252C%2520send%2520me%2520email%2520notifications.%250A%253C%252Flabel%253E%250A%250A%253C%21--%2520Range%2520Slider--%253E%250A%253Cinput%2520type%253D%2522range%2522%2520class%253D%2522custom-range%2520m-v-6%2522%2520id%253D%2522volume%2522%2520name%253D%2522volume%2522%252F%253E"
+              style="
+                width: 810px;
+                height: 332px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
           </div>
         </section>
       </div>
