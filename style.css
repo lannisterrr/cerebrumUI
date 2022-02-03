@@ -417,3 +417,14 @@ input[type='range']:focus::-moz-range-thumb {
   outline: 3px solid var(--complimentary-bg-color);
   outline-offset: 0.125rem;
 }
+
+/* Lists */
+
+.noti {
+  background: var(--primary-color);
+  border-radius: 5px;
+}
+
+.down-arrow {
+  margin-left: 11rem;
+}
