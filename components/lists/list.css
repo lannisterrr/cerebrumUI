@@ -1,0 +1,10 @@
+/* Lists  */
+
+.noti {
+  background: var(--primary-color);
+  border-radius: 5px;
+}
+
+.down-arrow {
+  margin-left: 11rem;
+}
