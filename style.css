@@ -482,7 +482,7 @@ input[type='range']:focus::-moz-range-thumb {
 }
 
 .nav-searchBar:focus {
-  outline: none;
+  outline: solid var(--primary-color);
   border: none;
 }
 
