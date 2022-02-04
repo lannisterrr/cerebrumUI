@@ -1,0 +1,166 @@
+@import url('../../style.css');
+/* text-input */
+
+textarea::placeholder {
+  color: var(--primary-color);
+}
+
+.email-input {
+  margin-top: 0.7rem;
+}
+
+.warning {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.text-box {
+  resize: none;
+  letter-spacing: 1px;
+  max-width: 100%;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+}
+
+.error {
+  border-color: var(--primary-color);
+}
+
+.error:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+/* custom radio */
+
+/* custom */
+.radio {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radio__input {
+  display: none;
+}
+
+.radio__radio {
+  width: 1.35em;
+  height: 1.35em;
+  border: 2px solid #e6ddc4;
+  margin-right: 1rem;
+}
+
+.radio__radio::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: var(--primary-color);
+  border-radius: 50%;
+
+  /* so that by default it's not shown */
+  transform: scale(0);
+  transition: transform 0.3s;
+}
+
+/* this basically works as a if block, if it's checked only then select the next element */
+.radio__input:checked + .radio__radio::after {
+  transform: scale(1);
+}
+
+/* custom checkbox */
+
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox__input {
+  display: none;
+}
+
+.checkbox__box {
+  width: 1.35em;
+  height: 1.35em;
+  border: 2px solid var(--primary-color);
+  border-radius: 3px;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.checkbox__box::after {
+  content: '\2714';
+  color: var(--complimentary-text-color-2);
+  transform: scale(0);
+  transform: transform 0.15s;
+}
+
+.checkbox__input:checked + .checkbox__box {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.checkbox__input:checked + .checkbox__box::after {
+  transform: scale(1);
+}
+
+/* range */
+
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 25rem;
+}
+
+/***** Track Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type='range']::-webkit-slider-runnable-track {
+  background: var(--complimentary-bg-color);
+  height: 0.5rem;
+}
+
+/******** Firefox ********/
+input[type='range']::-moz-range-track {
+  background: var(--complimentary-bg-color);
+  height: 0.5rem;
+}
+
+/***** Thumb Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -8px; /* Centers thumb on the track */
+  background-color: var(--primary-color);
+  height: 2rem;
+  width: 1rem;
+  border-radius: 0;
+}
+
+/***** Thumb Styles *****/
+/***** Firefox *****/
+input[type='range']::-moz-range-thumb {
+  border: none; /*Removes extra border that FF applies*/
+  border-radius: 0; /*Removes default border-radius that FF applies*/
+  background-color: var(--primary-color);
+  height: 2rem;
+  width: 1rem;
+}
+
+/* focus styles */
+
+input[type='range']:focus::-moz-range-thumb {
+  border: 1px solid var(--complimentary-bg-color);
+  outline: 3px solid var(--complimentary-bg-color);
+  outline-offset: 0.125rem;
+}
