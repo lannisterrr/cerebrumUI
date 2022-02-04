@@ -62,6 +62,7 @@ body {
 /* badge avatar */
 .badge-wrapper {
   position: relative;
+  cursor: pointer;
 }
 
 .badge-avatar-red {
@@ -254,6 +255,7 @@ btn:focus {
 
 /* text-input */
 
+input::placeholder,
 textarea::placeholder {
   color: var(--primary-color);
 }
@@ -427,4 +429,70 @@ input[type='range']:focus::-moz-range-thumb {
 
 .down-arrow {
   margin-left: 11rem;
+}
+
+/* Nav Component */
+
+.main-head {
+  background: var(--complimentary-bg-color);
+  color: var(--secondary-color);
+  /* position: sticky;
+  top: 0px;
+  z-index: 3; */
+}
+
+.nav-component {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  font-weight: 400;
+}
+
+.hamburger-icon {
+  margin-left: -5rem;
+  cursor: pointer;
+}
+
+.nav-searchBar-container {
+  position: relative;
+}
+
+.nav-searchIcon {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+}
+
+.nav-searchBar {
+  width: 300px;
+  padding-left: 4rem;
+  border: none;
+}
+
+.nav-searchBar:focus {
+  outline: none;
+  border: none;
+}
+
+.link-wrapper {
+  display: flex;
+}
+.nav-link-button {
+  background: var(--primary-color);
+}
+
+.nav-link-button:hover {
+  filter: brightness(95%);
 }
