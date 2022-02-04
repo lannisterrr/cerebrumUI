@@ -22,13 +22,6 @@
   line-height: 2.4rem;
 }
 
-.center-text {
-  text-align: center;
-}
-
-.line-through {
-  text-decoration: line-through;
-}
 
 .f-1 {
   font-size: var(--font-1);
@@ -81,6 +74,15 @@
 .t-c-4 {
   color: var(--accent-color);
 }
+
+.center-text {
+  text-align: center;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
 
 .l-h-1 {
   line-height: 3px;

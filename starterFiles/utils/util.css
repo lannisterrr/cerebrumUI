@@ -18,6 +18,10 @@
   display: flex;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 .centered-column {
   display: flex;
   flex-direction: column;

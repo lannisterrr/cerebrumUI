@@ -45,6 +45,7 @@
 .nav-menu.active {
   left: 0;
   overflow: auto;
+  height: 100vh;
   transition: 350ms;
 }
 
