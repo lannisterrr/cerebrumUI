@@ -223,7 +223,6 @@ btn:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 99;
   opacity: 1;
 }
 
@@ -482,7 +481,7 @@ input[type='range']:focus::-moz-range-thumb {
 }
 
 .nav-searchBar:focus {
-  outline: none;
+  outline: solid var(--primary-color);
   border: none;
 }
 
