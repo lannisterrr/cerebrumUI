@@ -1,3 +1,5 @@
+@import url('../../style.css');
+
 .main-head {
   background: var(--complimentary-bg-color);
   color: var(--secondary-color);
@@ -47,7 +49,7 @@
 }
 
 .nav-searchBar:focus {
-  outline: none;
+  outline: solid var(--primary-color);
   border: none;
 }
 
