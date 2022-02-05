@@ -14,7 +14,7 @@
   <body>
     <!-- navbar -->
     <div class="grid-container">
-      <header class="navbar">
+      <header class="navbar z-index-lg p-h-6">
         <div class="logo-click rotate">
           <object
             id="logo"
@@ -44,13 +44,10 @@
         </nav>
       </header>
 
-      <aside class="nav-menu active box-shadow-right">
+      <aside class="nav-menu active box-shadow-right z-index-md">
         <ul class="nav-menu-items">
           <li class="nav-text">
             <a class="nav-links" href="#getting-started">Getting Started</a>
-          </li>
-          <li class="nav-text">
-            <a class="nav-links" href="#">Alert</a>
           </li>
           <li class="nav-text">
             <a class="nav-links" href="#avatar">Avatar</a>
@@ -63,17 +60,16 @@
           <li class="nav-text"><a class="nav-links" href="#card">Cards</a></li>
           <li class="nav-text"><a class="nav-links" href="#image">Image</a></li>
           <li class="nav-text"><a class="nav-links" href="#input">Input</a></li>
-          <li class="nav-text"><a class="nav-links" href="#input">Input</a></li>
           <li class="nav-text">
             <a class="nav-links" href="#text-utils">Text Utils</a>
           </li>
           <li class="nav-text"><a class="nav-links" href="#lists">Lists</a></li>
-          <li class="nav-text"><a class="nav-links" href="#lists">Lists</a></li>
-          <li class="nav-text"><a class="nav-links" href="#lists">Lists</a></li>
-          <li class="nav-text"><a class="nav-links" href="#lists">Lists</a></li>
-          <li class="nav-text"><a class="nav-links" href="#lists">Lists</a></li>
-          <li class="nav-text"><a class="nav-links" href="#lists">Lists</a></li>
-          <li class="nav-text"><a class="nav-links" href="#lists">Lists</a></li>
+          <li class="nav-text">
+            <a class="nav-links" href="#lists">Navabr</a>
+          </li>
+          <li class="nav-text"><a class="nav-links" href="#lists">Modal</a></li>
+          <li class="nav-text"><a class="nav-links" href="#lists">Modal</a></li>
+          <li class="nav-text"><a class="nav-links" href="#lists">Modal</a></li>
         </ul>
       </aside>
 
@@ -96,7 +92,7 @@
               section of your HTML page.
             </p>
 
-            <div className="code-snippet">
+            <div className="code-snippet centered-row ">
               <iframe
                 src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=764&ds=false&dsyoff=20px&dsblur=81px&wc=true&wa=true&pv=36px&ph=51px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fcerebrumui.netlify.app%252Fcerebrum.css%2522%2520%252F%253E"
                 style="
@@ -107,6 +103,7 @@
                   overflow: hidden;
                 "
                 sandbox="allow-scripts allow-same-origin"
+                scrolling="no"
               >
               </iframe>
             </div>
@@ -763,6 +760,36 @@
             </iframe>
           </div>
         </section>
+        <section id="modal" class="m-v-3">
+          <h3 class="heading-3 t-c-3">Modal Component</h3>
+          <div class="centered-row space-around-row component-border p-4">
+            <button class="btn btn-custom m-h-3 t-c-1 modal-button">
+              show
+            </button>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-overlay modal-container z-index-x-l">
+      <div class="modal">
+        <i class="fa fa-times close-icon close-modal"></i>
+        <div class="modal-header p-4">
+          <h3 class="heading-3">Modal Header</h3>
+        </div>
+        <div class="modal-content p-8">
+          <p class="heading-4">Modal Content</p>
+        </div>
+        <div class="modal-button-container p-4">
+          <button
+            class="btn outline-danger m-h-3 t-c-2"
+            id="modal-close-button"
+          >
+            Close
+          </button>
+          <button class="btn btn-danger m-h-3 t-c-1">Save Changes</button>
+        </div>
       </div>
     </div>
     <script src="script.js"></script>

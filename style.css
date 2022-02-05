@@ -223,7 +223,6 @@ btn:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 99;
   opacity: 1;
 }
 
@@ -482,7 +481,7 @@ input[type='range']:focus::-moz-range-thumb {
 }
 
 .nav-searchBar:focus {
-  outline: none;
+  outline: solid var(--primary-color);
   border: none;
 }
 
@@ -495,4 +494,68 @@ input[type='range']:focus::-moz-range-thumb {
 
 .nav-link-button:hover {
   filter: brightness(95%);
+}
+
+/* Modal Component */
+
+.modal-container {
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  /* this means it will take the entire page */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.show-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: var(--complimentary-text-color-2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  /* for mobile */
+  max-width: 95%;
+  width: 500px;
+  animation: modalopen 1s;
+}
+
+/* Animation */
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.close-icon {
+  float: right;
+  color: var(--complimentary-text-color-2);
+  font-size: 24px;
+  position: relative;
+  top: 13px;
+  right: 13px;
+  cursor: pointer;
+}
+
+.modal-header {
+  background: var(--primary-color);
+  color: var(--complimentary-text-color-2);
+}
+
+.modal-content {
+  background: var(--secondary-color);
+}
+
+.modal-button-container {
+  display: flex;
+  justify-content: flex-end;
 }

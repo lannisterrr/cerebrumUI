@@ -37,6 +37,22 @@
   height: 100%;
 }
 
+.z-index-x-l {
+  z-index: 999;
+}
+
+.z-index-lg {
+  z-index: 5;
+}
+
+.z-index-md {
+  z-index: 3;
+}
+
+.z-index-sm {
+  z-index: 1;
+}
+
 .box-shadow-dark {
   box-shadow: var(--box-shadow-dark);
 }
