@@ -37,6 +37,10 @@
   height: 100%;
 }
 
+.z-index-x-l {
+  z-index: 999;
+}
+
 .z-index-lg {
   z-index: 5;
 }
