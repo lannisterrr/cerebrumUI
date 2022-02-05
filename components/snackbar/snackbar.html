@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="snackbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Input</title>
+  </head>
+  <body>
+    <div class="centered-row space-around-row component-border p-4">
+      <button class="btn btn-custom m-h-3 t-c-1 snackbar-button">
+        show snackbar
+      </button>
+    </div>
+    <div class="snack-bar-container p-3">
+      <div class="snack-bar">
+        <p class="f-5">Can't send photo. Retry in 5 seconds.</p>
+        <a class="f-bold t-c-1 f-5 p-3" href="#">Retry</a>
+        <button class="close p-4 f-4"><i class="fas fa-times f-5"></i></button>
+      </div>
+    </div>
+    <script src="snackbar.js"></script>
+  </body>
+</html>
