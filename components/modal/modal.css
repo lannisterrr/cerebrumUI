@@ -1,0 +1,62 @@
+@import url('../../style.css');
+
+/* Modal Component */
+
+.modal-container {
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  /* this means it will take the entire page */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.show-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: var(--complimentary-text-color-2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  /* for mobile */
+  max-width: 95%;
+  width: 50rem;
+  animation: modalopen 1s;
+}
+
+/* Animation */
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.close-icon {
+  color: var(--complimentary-text-color-2);
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.modal-header {
+  display: flex;
+  background: var(--primary-color);
+  color: var(--complimentary-text-color-2);
+}
+
+.modal-content {
+  background: var(--secondary-color);
+}
+
+.modal-button-container {
+  display: flex;
+  justify-content: flex-end;
+}

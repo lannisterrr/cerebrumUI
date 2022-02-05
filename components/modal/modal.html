@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="modal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Input</title>
+  </head>
+  <body>
+    <div class="centered-row space-around-row component-border p-4 m-v-6">
+      <button class="btn btn-custom m-h-3 t-c-1 modal-button">show</button>
+    </div>
+    <div class="modal-overlay modal-container z-index-x-l">
+      <div class="modal">
+        <div class="modal-header p-4">
+          <h3 class="heading-3">Modal Header</h3>
+          <i class="fa fa-times f-8 close-icon close-modal"></i>
+        </div>
+        <div class="modal-content p-8">
+          <p class="heading-4">Modal Content</p>
+        </div>
+        <div class="modal-button-container p-4">
+          <button
+            class="btn outline-danger m-h-3 t-c-2"
+            id="modal-close-button"
+          >
+            Close
+          </button>
+          <button class="btn btn-danger m-h-3 t-c-1">Save Changes</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="modal.js"></script>
+  </body>
+</html>
