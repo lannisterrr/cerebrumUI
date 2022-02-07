@@ -1,0 +1,31 @@
+@import url('../../style.css');
+
+/* Grid Component */
+
+.grid-component-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: -2px 3px 4px #888, -4px -3px 5px #888;
+}
+
+.grid-component-container-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40px auto;
+  grid-template-areas:
+    'h h h'
+    'a c c';
+  box-shadow: -2px 3px 4px #888, -4px -3px 5px #888;
+}
+
+.grid-item-1 {
+  grid-area: h;
+}
+
+.aside {
+  grid-area: a;
+}
+
+.grid-item-2 {
+  grid-area: c;
+}
