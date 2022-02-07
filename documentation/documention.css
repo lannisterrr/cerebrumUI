@@ -27,7 +27,8 @@
   padding-right: 3rem;
 }
 
-@media only screen and (max-width: 600px) {
+/* Media Queries */
+@media only screen and (min-width: 320px) and (max-width: 1300px) {
   /* For Mobile */
 
   .navbar {
@@ -90,13 +91,5 @@
       'h h h h h h h h h h h h'
       'c c c c c c c c c c c c';
     margin: 1.2rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  /* //For Laptops */
-  .code-snippet,
-  iframe {
-    overflow: hidden;
   }
 }
