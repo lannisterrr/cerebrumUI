@@ -1,0 +1,36 @@
+@import url('../../style.css');
+
+/* Snackbar / Toast */
+
+.snack-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--primary-color);
+  color: var(--complimentary-text-color-2);
+  padding: 0rem 1rem;
+  max-width: 95%;
+  width: 40rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.link:active {
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+}
+
+.close {
+  background: transparent;
+  border: none;
+  color: var(--complimentary-text-color-2);
+  cursor: pointer;
+}
+
+.close:active {
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
