@@ -94,7 +94,6 @@
               To quickly get started, place the following code in the head
               section of your HTML page.
             </p>
-
             <div className="code-snippet centered-row ">
               <iframe
                 src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=sharp&l=htmlmixed&width=764&ds=false&dsyoff=20px&dsblur=81px&wc=true&wa=true&pv=36px&ph=51px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fcerebrumui.netlify.app%252Fcerebrum.css%2522%2520%252F%253E"
@@ -110,6 +109,16 @@
               >
               </iframe>
             </div>
+            <h3 class="heading-4 t-c-3">Design Sytem Terminology</h3>
+            <ul class="m-v-3">
+              <li class="f-6 f-bold p-3 l-h-4">This Design System follow the rule of 8.
+                Meaning the spacing and size of element have classes 1 to 8 which give them values from 0.25rem to 2rem. Note: 1rem = 10px.
+              </li>
+              <li class="f-6 p-3 l-h-4"><span class="t-c-3 f-7">Typography Classes : </span> It is denoted by letter <em>"f"</em> &nbsp; followed up a dash (-) and at the end numbers from 1 - 8. <em>"f"</em> &nbsp; is for giving font-size to a text. Eg. <em> f-1 , f-2 etc.. </em></li>
+              <li class="f-6 p-3"><span class="t-c-3 f-7">Spacing Classes : </span> It is denoted by letter <em>"p"</em> and <em>"m"</em>&nbsp; followed up a dash (-) and at the end numbers from 1 - 8. <em>"p"</em>&nbsp; is for giving overall padding to an element and <em>"m"</em> &nbsp; to give overall margin to an element. Eg. <em> p-1, p-2 , m-1 , m-2 etc... </em></li>
+             
+              <li class="f-6 p-3"> <span class="t-c-3 f-7">Vertical and Horizontol spacing classes : </span> Vertical means top and bottom and Horizontol means left and right. For example <em>"p-h-4"</em> &nbsp; means padding left and padding right. and same follows for margin. <em>"m-v-4"</em> &nbsp; means margin top and margin bottom and same follows for padding. </li>
+            </ul>
           </main>
         </section>
 
@@ -877,7 +886,7 @@
           <p class="f-7 l-h-4">Grids are used to structure the layout of the page.</p>
           <div class="component-border p-4">
             <h3 class="heading-3 center-text t-c-3">Two Items in a Grid</h3>
-            <div class="grid-component-container">
+            <div class="grid-two-column">
               <div class="f-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit suscipit consequatur recusandae, facere autem ea dolorum accusamus eveniet nulla magni quam? Nemo natus commodi quia dignissimos maxime enim delectus magni aperiam tenetur ipsum provident nulla quidem consectetur corrupti ut neque molestias laborum deleniti dicta, tempora explicabo illo. Consectetur dolore mollitia, </div>
               <div class="f-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quo exercitationem in officiis veniam nobis tempora commodi eveniet quam . Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda in expedita aut ad unde maxime laboriosam earum. Unde rem accusamus ipsam vero autem? Maxime quam ipsum, recusandae deserunt sit nemo?</div>
             </div>
@@ -885,8 +894,8 @@
 
           <div class="component-border p-4 m-v-4">
             <h3 class="heading-3 t-c-3">Three Items in a Grid</h3>
-            <div class="grid-component-container-2">
-              <div class="grid-item-1 center-text  heading-3">This is heading</div>
+            <div class="grid-with-area">
+              <div class="header center-text  heading-3">This is heading</div>
               <aside class="aside">
                 <nav>
                   <ul>
@@ -896,7 +905,7 @@
                   </ul>
                 </nav>
               </aside>
-              <div class="grid-item-2 f-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quo exercitationem in officiis veniam nobis tempora commodi eveniet quam . Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda in expedita aut ad unde maxime laboriosam earum. Unde rem accusamus ipsam vero autem? Maxime quam ipsum, recusandae deserunt sit nemo?</div>
+              <div class="content f-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quo exercitationem in officiis veniam nobis tempora commodi eveniet quam . Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda in expedita aut ad unde maxime laboriosam earum. Unde rem accusamus ipsam vero autem? Maxime quam ipsum, recusandae deserunt sit nemo?</div>
             </div>
           </div>
         </section>
