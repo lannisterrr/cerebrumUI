@@ -1,0 +1,33 @@
+@import url('../../style.css');
+
+/* Grid Component */
+
+.grid-two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: -2px 3px 4px var(--border-color),
+    -4px -3px 5px var(--border-color);
+}
+
+.grid-with-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40px auto;
+  grid-template-areas:
+    'header header header'
+    'aside content content';
+  box-shadow: -2px 3px 4px var(--border-color),
+    -4px -3px 5px var(--border-color);
+}
+
+.header {
+  grid-area: header;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.content {
+  grid-area: content;
+}

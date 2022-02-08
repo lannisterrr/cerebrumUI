@@ -1,0 +1,55 @@
+@import url('../../style.css');
+
+/* Rating (e-commerce) */
+
+.read-only-wrapper {
+  flex: 1 1 10rem;
+}
+
+.interactive-wrapper {
+  flex: 1 1 10rem;
+  align-items: center;
+  gap: 0.3em;
+  overflow: hidden;
+}
+.read-only-rating {
+  background: var(--primary-color);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  border: 2px solid black;
+}
+
+.read-only-rating.empty {
+  background: var(--text-color-2);
+}
+
+.rating-heading {
+  flex: 1 1 10rem;
+}
+
+/* Interactive rating */
+
+.rating__star {
+  font-size: 2.3rem;
+  cursor: pointer;
+  color: var(--primary-color);
+  transition: filter linear 0.3s;
+}
+
+.rating__star:hover {
+  filter: drop-shadow(1px 1px 4px var(--primary-color));
+}
+
+.rating__result {
+  pointer-events: none;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="rating.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Rating</title>
+  </head>
+  <body>
+    <div class="centered-row space-around-row component-border p-4">
+      <h3 class="heading-4 rating-heading t-c-3">Read Only Rating</h3>
+      <div class="read-only-wrapper flex">
+        <div class="read-only-rating p-4"></div>
+        <div class="read-only-rating p-4"></div>
+        <div class="read-only-rating p-4"></div>
+        <div class="read-only-rating empty p-4"></div>
+        <div class="read-only-rating empty p-4"></div>
+      </div>
+      <h3 class="heading-4 rating-heading t-c-3">Interactive Rating</h3>
+      <div class="interactive-wrapper flex p-3">
+        <i class="rating__star far fa-star"></i>
+        <i class="rating__star far fa-star"></i>
+        <i class="rating__star far fa-star"></i>
+        <i class="rating__star far fa-star"></i>
+        <i class="rating__star far fa-star"></i>
+        <span class="rating__result f-8 t-c-3 p-h-4"></span>
+      </div>
+      <script src="rating.js"></script>
+    </div>
+  </body>
+</html>
