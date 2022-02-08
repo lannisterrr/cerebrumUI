@@ -104,7 +104,7 @@ function sideBarDisappear() {
     //if the page is smaller than 1250 px
     for (let i = 0; i < navLinks.length; i++) {
       navLinks[i].addEventListener('click', function () {
-        console.log(navLinks[i]);
+        // console.log(navLinks[i]);
         sidebar.classList.remove('active');
         flag = 0;
         logo.classList.remove('down');
